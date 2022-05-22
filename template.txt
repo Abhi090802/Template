@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define endl "\n"
+#define omap map<int,int>
+#define vi vector<int>
+#define vii vector<vector<int>>
+#define oset set<int>
+#define omultiset multiset<int>
+#define omultimap multimap<int,int>
+#define umap unordered_map<int,int>
+#define uset unordered_set<int>
+#define minpq priority_queue<int,vector<int>,greater<int>>
+#define maxpq priority_queue<int>
+#define pi 3.141592653589793238
+#define pb push_back()
+#define py cout<<"YES"<<endl;
+#define pn cout<<"NO"<<endl;
+#define fora(i,n) for(int i=0;i<n;i++)
+#define ford(i,n) for(int i=n-1;i>=0;i--)
+#define forad(i,j,m,n) for(int i=0;i<m;i++)  for(int j=0;j<n;j++)  
+int bp(int x) { return __builtin_popcount(x);}
+int bp(int &abhi) { return __builtin_popcount(abhi); } 
+vector<int>sorta(vector<int>&abhi) { sort(abhi.begin(),abhi.end()); return abhi;}
+vector<int>sortd(vector<int>&abhi) { sort(abhi.rbegin(),abhi.rend()); return abhi;}
+vector<int>revf(vector<int>&abhi) { reverse(abhi.begin(),abhi.end()); return abhi;}
+bool ispalindv(vector<int>&abhi) { int low=0; int high=abhi.size()-1; while(low<=high) {if(abhi[low]==abhi[high]){ low++; high--;} else return 0; }return 1;}
+bool ispalinds(string&abhi) { int low=0; int high=abhi.size()-1; while(low<=high) {if(abhi[low]==abhi[high]){ low++; high--; } else return 0; }return 1;}
+bool isPerfectSquare(int abhi){if (abhi >= 0) {int abhi1 = sqrt(abhi);return (abhi1 * abhi1 == abhi);}return false;}
+const int MOD = 1e9 + 7;
+string dectobin(int num){ string ans; for(int i=0;i<=log2(num);i++)  if(num>>i & 1) ans+='1';  else ans+='0'; return ans;}
+int bintodec(string abhi) { int abhi1=0; int n=abhi.size(); fora(i,n) abhi1+=((abhi[i]-'0')*pow(2,i));return abhi1; }
+void solve() 
+{
+    
+}
+    signed main() 
+    {
+       ios_base::sync_with_stdio(false);
+       cin.tie(NULL);
+       int t; cin >> t;
+       while (t--) solve();
+       return 0;
+    }
