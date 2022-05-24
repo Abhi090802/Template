@@ -5,6 +5,7 @@ using namespace std;
 #define ff first
 #define ss second
 #define vi vector<int>
+#define vip vector<pair<int,int>>
 #define vii vector<vector<int>>
 #define oset set<int>
 #define omultiset multiset<int>
