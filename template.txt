@@ -1,18 +1,14 @@
-////////////////////Har Har Mahadev//////////////////
+//////////////////// Har Har Mahadev //////////////////
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
-#define omap map<int,int>
 #define ff first
 #define ss second
 #define vi vector<int>
 #define vip vector<pair<int,int>>
 #define vii vector<vector<int>>
-#define oset set<int>
-#define omultiset multiset<int>
-#define omultimap multimap<int,int>
-#define umap unordered_map<int,int>
-#define uset unordered_set<int>
+#define ms multiset<int>
+#define mp multimap<int,int>
 #define minpq priority_queue<int,vector<int>,greater<int>>
 #define maxpq priority_queue<int>
 #define pi 3.141592653589793238
@@ -24,8 +20,9 @@ using namespace std;
 #define forad(i,j,m,n) for(int i=0;i<m;i++)  for(int j=0;j<n;j++)  
 #define lb(abhi1,abhi) lower_bound(abhi1.begin(),abhi1.end(),abhi)
 #define ub(abhi1,abhi) upper_bound(abhi1.begin(),abhi1.end(),abhi)
+int acc(vector<int>&abhi1) return accumulate(abhi1.begin(),abhi1.end(),0);
 int bp(int x) { return __builtin_popcount(x);}
-int LIS(vector<int>nums){int len=1; for(int i=1;i<nums.size();i++)if(nums[i]>nums[len-1]){len++;nums[len-1]=nums[i];}else{int pos=lower_bound(nums.begin(),nums.begin()+len-1,nums[i])-nums.begin();nums[pos]=nums[i];}return len;
+int lis(vector<int>nums){int len=1; for(int i=1;i<nums.size();i++)if(nums[i]>nums[len-1]){len++;nums[len-1]=nums[i];}else{int pos=lower_bound(nums.begin(),nums.begin()+len-1,nums[i])-nums.begin();nums[pos]=nums[i];}return len;
 int bp(int &abhi) { return __builtin_popcount(abhi); } 
 vector<int>sorta(vector<int>&abhi) { sort(abhi.begin(),abhi.end()); return abhi;}
 vector<int>sortd(vector<int>&abhi) { sort(abhi.rbegin(),abhi.rend()); return abhi;}
