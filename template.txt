@@ -18,9 +18,9 @@ using namespace std;
 #define fora(i,n) for(int i=0;i<n;i++)
 #define ford(i,n) for(int i=n-1;i>=0;i--)
 #define forad(i,j,m,n) for(int i=0;i<m;i++)  for(int j=0;j<n;j++)  
-#define lb(abhi1,abhi) lower_bound(abhi1.begin(),abhi1.end(),abhi)
-#define ub(abhi1,abhi) upper_bound(abhi1.begin(),abhi1.end(),abhi)
-int acc(vector<int>&abhi1) return accumulate(abhi1.begin(),abhi1.end(),0);
+//#define lb(abhi1,abhi) lower_bound(abhi1.begin(),abhi1.end(),abhi)
+//#define ub(abhi1,abhi) upper_bound(abhi1.begin(),abhi1.end(),abhi)
+//int acc(vector<int>&abhi1) return accumulate(abhi1.begin(),abhi1.end(),0);
 int bp(int x) { return __builtin_popcount(x);}
 int lis(vector<int>nums){int len=1; for(int i=1;i<nums.size();i++)if(nums[i]>nums[len-1]){len++;nums[len-1]=nums[i];}else{int pos=lower_bound(nums.begin(),nums.begin()+len-1,nums[i])-nums.begin();nums[pos]=nums[i];}return len;
 int bp(int &abhi) { return __builtin_popcount(abhi); } 
